@@ -5,3 +5,5 @@ jinja2
 python-multipart
 python-nmap==0.6.4   # optional; used if nmap installed
 scapy                # optional; ARP scanning (may need admin)
+Flask==3.0.3
+requests
