@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NetSentinel</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header><h1>NetSentinel</h1><p>Network Scanner & Port Analyzer — safe, non-intrusive</p></header>
+
+    <section class="panel">
+      <input id="target" placeholder="Enter IP, domain, or subnet (e.g. 192.168.1.0/24)">
+      <select id="type">
+        <option value="host">Host</option>
+        <option value="subnet">Subnet</option>
+      </select>
+      <button id="scan">Start Scan</button>
+      <span id="status">Idle</span>
+    </section>
+
+    <section id="results" class="hidden">
+      <h2>Results</h2>
+      <div id="hosts" class="card"></div>
+      <div id="ports" class="card"></div>
+      <div id="banners" class="card"></div>
+      <a id="report" class="btn" target="_blank">Download Report</a>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
